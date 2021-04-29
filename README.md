@@ -6,6 +6,6 @@ This is the simplest possible Java webapp for testing servlet container deployme
 ```
 git clone https://github.com/submah/maven-helloworld.git
 
-docker run -it --rm --name my-maven-project -v /root/maven-helloworld:/usr/src/app  maven   mvn -f /usr/src/app clean package
+docker run -it --rm --name my-demo-maven-project -v /root/maven-helloworld/:/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean package
 
 ```
